@@ -22,7 +22,7 @@ describe("When Events is created", () => {
         })
       );
       await screen.findByText("En cours");
-      setTimeout(1500)
+      jest.advanceTimersByTime(1000);
       await screen.findByText("Envoyer");
       expect(onSuccess).toHaveBeenCalled();
     });

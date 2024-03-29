@@ -21,6 +21,7 @@ describe("When Form is created", () => {
         })
       );
       await screen.findByText("En cours");
+      jest.advanceTimersByTime(1000);
       await screen.findByText("Message envoyé !");
     });
   });

@@ -13,7 +13,8 @@ import Modal from "../../containers/Modal";
 import { useData } from "../../contexts/DataContext";
 
 const Page = () => {
-  const {data} = useData()
+   const {last} = useData() 
+/*   const {data} = useData()
  
       const last = (
         data?.events.reduce((a, b) => {
@@ -22,7 +23,7 @@ const Page = () => {
               return a
             }
               return b
-          }))
+          })) */
 
   return <>
     <header>
@@ -133,6 +134,7 @@ const Page = () => {
           small
           label="boom"
         />
+
       </div>
       <div className="col contact">
         <h3>Contactez-nous</h3>
